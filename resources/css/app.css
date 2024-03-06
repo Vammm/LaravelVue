@@ -3,9 +3,8 @@
 
 @import "/resources/scss/app.scss";
 
-@import "menu_top.css";
-@import "registration.css";
+
 
 .copy{
-    background: #add8e6;
+    background: #088881;
 }

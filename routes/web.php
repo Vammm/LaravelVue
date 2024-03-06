@@ -14,10 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.test');
 })->name('home');
-Route::get('/test', function () {
-    return view('test');
-})->name('test');
+
+Route::get('/test2', function () {
+    return view('pages.test2');
+})->name('test2');
+
+Route::get('/template', function () {
+    return view('template');
+})->name('template');
+
+Route::get('/testContent', function () {
+    return view('testContent');
+})->name('testContent');
 
 Route::post('/login', [App\Http\Controllers\UserAuth::class, 'login']);
